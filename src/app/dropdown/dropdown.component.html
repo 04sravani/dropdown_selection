@@ -1,0 +1,11 @@
+<div class="container">
+    <select (change)="countryToState($event)"> 
+        <option>select country</option>
+        <option *ngFor="let countries of countryName" value="{{countries.id}}">{{countries.name}}</option>
+    </select>
+    <select>
+        <option>select city</option>
+        <option *ngFor="let state of stateName">{{state.name}}</option>
+    </select>
+    
+</div>
