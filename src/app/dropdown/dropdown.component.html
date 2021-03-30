@@ -1,6 +1,6 @@
 <div class="container">
     <select (change)="countryToState($event)"> 
-        <option>Select Country</option>
+        <option>Select Countries</option>
         <option *ngFor="let countries of countryName" value="{{countries.id}}">{{countries.name}}</option>
     </select>
     <select>
